@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
- 
+ //Module for HC-SR04. Basic and can be widly implemented with any Ultrasonic or proxmity sensor.
 module ultraSonic(
 input CLK100MHZ,
 input echo,
