@@ -1,4 +1,4 @@
-_Search-and-Sort_
+__Search-and-Sort__
 
 _Project Statement:_ 
 Design and build an autonomous vehicle that can search a space, find four
