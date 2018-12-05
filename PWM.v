@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
-
+//PWM module used for tank motors. It can be simplified if you want less possible speeds by simply removing the cases and lowering the
+//bit size of speed.
 module PWM(
     input [4:0] speed,
     input reset,
