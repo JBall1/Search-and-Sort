@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
-
+//Basic module for movement commands. Can be implemented into another module if needed. Takes a 4 bit value and assigns those values to the
+//motors for some direction described below.
 module dirMovement(
 input CLK100MHZ,
 input [2:0] movementCommand,
