@@ -1,6 +1,6 @@
 _Search-and-Sort_
 
-##Project Statement: 
+_Project Statement:_ 
 Design and build an autonomous vehicle that can search a space, find four
 painted steel washers, and take the washers to a specified corner for each
 color.
