@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
-
+//Scaling module for frequency. 
 
 module getFreq(
 input CLK100MHZ,
 input signal,
 output reg [19:0] frequency = 0 // 0 -> 1,048,575
 );
-parameter countTo = 100000000; // was 100000000, was 3125000, was 1562500, now 781250
-parameter scalar = 1000; // was 1, was 32, was 64, now 128
+parameter countTo = 100000000; // Count to value
+parameter scalar = 1000; // Scaling factor
 
 
 reg [26:0] clockCounter = 0; 
