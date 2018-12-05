@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+//Top module for color sensor.
 module Top(
     input clk,
    // input [1:0] SW,
