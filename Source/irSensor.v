@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
-
+//IR sensor module used with the Sharp GP2Y0A21YK sensor. Can be used easily with any other IR sensor or ultra sonic device
+//for proximity detection. 3 IR sensors were used on our design: 1 in the front as well as 1 on the right and left.
 module irSensor(
     input CLK100MHZ,
     input ir_FLAG,
