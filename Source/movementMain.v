@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-
+//Main movement module for tank. Based on current speed wanted/needed,  it will assigned the needed duty cycle for the motors.
+//Can be changed to have a speed for each motor with a few small changes.
 
 module movementMain(
 	input CLK100MHZ,
