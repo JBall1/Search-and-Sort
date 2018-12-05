@@ -1,3 +1,9 @@
+//Top module used to control all other modules within the project.
+//Contains base logic("State machine") for the movement and control of the tank.
+
+
+//TODO: proper turning in state machine.
+//      ADD electromagnet switch(1 or 0?)
 `timescale 1ns / 1ps
 module topmodule (   
     input CLK100MHZ, //clock
