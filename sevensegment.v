@@ -1,9 +1,5 @@
-// Company: Digilent Inc.
-// Engineer: Varun Kondagunturi
-// 
-// Create Date:    17:08:26 06/12/2014 
+//Basic 7 Segment display code for Basys 3. Can be implemented on pretty much any 7 segment display on a device.
 
-// Modified Slightly by Nicholas Volberding
 `timescale 1ns / 1ps
 
 module sevensegment(
@@ -86,8 +82,7 @@ always @ (*)
   endcase
  end
 assign {g, f, e, d, c, b, a} = sseg_temp; //concatenate the outputs to the register, this is just a more neat way of doing this.
-// I could have done in the case statement: 4'd0 : {g, f, e, d, c, b, a} = 7'b1000000; 
-// its the same thing.. write however you like it
+
  
 assign dp = 1'b1; //since the decimal point is not needed, all 4 of them are turned off
  
