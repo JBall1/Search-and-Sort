@@ -1,24 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/06/2018 12:55:50 PM
-// Design Name: 
-// Module Name: FreqCounter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+//Frequency Counter module designed for the Color Sensor. Can be used in multiple sencarios but was found to be best for TSC3200 only.
 
 module FreqCounter(
     input CLK,
