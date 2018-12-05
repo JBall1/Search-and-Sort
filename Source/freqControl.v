@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-
+//Module for Frequnecy counter used on the phototransistor.
 
 module freqControl(
 input CLK100MHZ,                                        
