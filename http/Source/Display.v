@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+//A simple display module used to display a 16 bit value to the Basys 3 Display.
 module Display(
 input CLK100MHZ,
 input [15:0] outputVal,
@@ -12,11 +12,10 @@ reg [1:0] pastFilter = 0;
 reg [5:0] delayMag = 0;
 reg [1:0] currentFilter = 0;
 
-// use colorSelect to change between different filter values
 reg [15:0] displayFreq = 0;
 reg [1:0] colorSelectReg = 0;
     always @ (posedge CLK100MHZ) begin
-         
+         //Delay 
  if (pastFilter == currentFilter && currentFilter == colorSelectReg) begin
            freqBuffer <= outputVal;
            delayMag <= delayMag + 1;
@@ -36,24 +35,6 @@ reg [1:0] colorSelectReg = 0;
      
    end
     
-//    always@(*) begin
-//      if(freqBuffer > 80 && freqBuffer < 150) begin
-//                  displayValue <= 16'b000000000000000;
-//                  displayValue <= 16'b0000_0000_0110_0100;
-////         end else if(freqBuffer >= 97 && freqBuffer < 100) begin
-////                  displayValue <= 16'b0000_0000_0000_0000;
-////                  displayValue <= 16'b0000_0000_1100_1000;
-////         end else if(freqBuffer >= 100 && freqBuffer < 103) begin
-////                  displayValue <= 16'b0000_0000_0000_0000;
-////                  displayValue <= 16'b0000_0001_0010_1100;
-                  
-////         end else if(freqBuffer >= 103 && freqBuffer < 108) begin
-////                  displayValue <= 16'b0000_0000_0000_0000;
-////                  displayValue <= 16'b0000_0001_1001_0000;
-                  
-//     end else 
-//        displayValue <= 16'b0000_0000_0000_0000;
-//    end
     sevensegment segs(
     .CLK100MHZ(CLK100MHZ),
     .reset(0),
